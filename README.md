@@ -15,4 +15,5 @@ With rm:
 
 ## Docker Container Interactive Cmd
 ```docker exec -it <nome_do_container> /bin/bash```
-transbrasa_web_1_138077b0c51d
+
+(transbrasa_web_1_138077b0c51d)
