@@ -26,6 +26,9 @@ No s3 existe mais de uma possiblidade de manipular os arquivos, tanto direto pel
 
 ### S3api
 - [Documentação S3api:](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html)
-Comando que lista os objetos do bucket S3, 1000 a 1000:
-```aws s3api list-objects --bucket logcomex-li```
 
+- Comando que lista os objetos do bucket S3, 1000 a 1000:
+```aws s3api list-objects --bucket bucket-name```
+
+- Outra forma de contar a listagem utilizando o summarize do aws cli:
+```aws s3 ls s3://bucket-name/ --recursive --summarize | grep "Total Objects:"```
