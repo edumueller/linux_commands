@@ -8,6 +8,9 @@ With -delete:
 With rm:
 ```find /path/to/directory -type f -name '*[0-9]x[0-9]*[0-9]x[0-9]*.jpg' -exec rm {} +```
 
+# Find out the location of the php.ini you are currently using
+```php -i | grep "Loaded Configuration File"```
+
 # Docker
 
 ## List Docker Containers
