@@ -35,3 +35,9 @@ No s3 existe mais de uma possiblidade de manipular os arquivos, tanto direto pel
 
 - Outra forma de contar a listagem utilizando o summarize do aws cli:
 ```aws s3 ls s3://bucket-name/ --recursive --summarize | grep "Total Objects:"```
+
+- Encontrar um arquivo num caminho no S3: 
+```aws s3 ls s3://bucket-name/Folter1/Folter2/Folder3/ | grep <partial-text-to-be-found>```
+
+- Fazer download de um arquivo do S3 (ou upload invertendo a ordem dos caminhos):
+```aws s3 cp s3://bucket-name/Folter1/Folter2/Folder3/s3-filename.txt Folder2/Folter3/local-filename.txt```
