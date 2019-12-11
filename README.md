@@ -21,6 +21,13 @@ With rm:
 
 (transbrasa_web_1_138077b0c51d)
 
+## Docker Logs
+
+Exibindo logs.. 
+Em tempo real: ```docker logs <container_name> -f -t --tail 100```
+Entre um horário: ```docker logs <container_name> -t --since 2019-12-11T11:21:50 --until 2019-12-11T11:22:05```
+OBS: O horário é horário brasileiro +3 horas.
+
 # AWS
 - [Documentação AWS CLI](https://docs.aws.amazon.com/cli/index.html)
 
